@@ -1,0 +1,205 @@
+[0m10:36:03.170458 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ff68f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d7dfa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d89f70>]}
+
+
+============================== 10:36:03.175488 | 7a3aac5a-91bb-46e1-88b8-b6a4220c3e61 ==============================
+[0m10:36:03.175488 [info ] [MainThread]: Running with dbt=1.7.3
+[0m10:36:03.176007 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/soumilshah/IdeaProjects/mdbt/Youtube/helloworld/logs', 'profiles_dir': '/Users/soumilshah/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:36:03.176654 [info ] [MainThread]: dbt version: 1.7.3
+[0m10:36:03.176903 [info ] [MainThread]: python version: 3.9.6
+[0m10:36:03.177115 [info ] [MainThread]: python path: /Users/soumilshah/IdeaProjects/mdbt/Youtube/dbt-env/bin/python
+[0m10:36:03.177327 [info ] [MainThread]: os info: macOS-13.6.1-x86_64-i386-64bit
+[0m10:36:03.237332 [info ] [MainThread]: Using profiles dir at /Users/soumilshah/.dbt
+[0m10:36:03.237686 [info ] [MainThread]: Using profiles.yml file at /Users/soumilshah/.dbt/profiles.yml
+[0m10:36:03.237916 [info ] [MainThread]: Using dbt_project.yml file at /Users/soumilshah/IdeaProjects/mdbt/Youtube/helloworld/dbt_project.yml
+[0m10:36:03.292613 [info ] [MainThread]: Configuration:
+[0m10:36:03.292939 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m10:36:03.293159 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:36:03.293369 [info ] [MainThread]: Required dependencies:
+[0m10:36:03.293675 [debug] [MainThread]: Executing "git --help"
+[0m10:36:03.444702 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:36:03.445901 [debug] [MainThread]: STDERR: "b''"
+[0m10:36:03.446329 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:36:03.446705 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m10:36:03.447034 [info ] [MainThread]: [31m1 check failed:[0m
+[0m10:36:03.447347 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "helloworld", target "dev" invalid: Runtime Error
+    thrift connection method requires additional dependencies. 
+    Install the additional required dependencies with `pip install dbt-spark[PyHive]`
+
+
+[0m10:36:03.451128 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.3556631, "process_user_time": 1.67826, "process_kernel_time": 0.211796, "process_mem_max_rss": "104009728", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m10:36:03.452121 [debug] [MainThread]: Command `dbt debug` failed at 10:36:03.451753 after 0.36 seconds
+[0m10:36:03.452694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ff68f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112e6ca30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112eb5550>]}
+[0m10:36:03.453184 [debug] [MainThread]: Flushing usage events
+[0m10:39:54.642106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fdbea90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112ba6190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112be1df0>]}
+
+
+============================== 10:39:54.647926 | d1d339b8-4bca-48cf-acd4-7358a5363a87 ==============================
+[0m10:39:54.647926 [info ] [MainThread]: Running with dbt=1.7.3
+[0m10:39:54.648551 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/soumilshah/IdeaProjects/mdbt/Youtube/helloworld/logs', 'profiles_dir': '/Users/soumilshah/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:39:54.649240 [info ] [MainThread]: dbt version: 1.7.3
+[0m10:39:54.649558 [info ] [MainThread]: python version: 3.9.6
+[0m10:39:54.649854 [info ] [MainThread]: python path: /Users/soumilshah/IdeaProjects/mdbt/Youtube/dbt-env/bin/python
+[0m10:39:54.650144 [info ] [MainThread]: os info: macOS-13.6.1-x86_64-i386-64bit
+[0m10:39:54.755114 [info ] [MainThread]: Using profiles dir at /Users/soumilshah/.dbt
+[0m10:39:54.755487 [info ] [MainThread]: Using profiles.yml file at /Users/soumilshah/.dbt/profiles.yml
+[0m10:39:54.755723 [info ] [MainThread]: Using dbt_project.yml file at /Users/soumilshah/IdeaProjects/mdbt/Youtube/helloworld/dbt_project.yml
+[0m10:39:54.755964 [info ] [MainThread]: adapter type: spark
+[0m10:39:54.756177 [info ] [MainThread]: adapter version: 1.7.1
+[0m10:39:54.813739 [info ] [MainThread]: Configuration:
+[0m10:39:54.814157 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:39:54.814388 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:39:54.814601 [info ] [MainThread]: Required dependencies:
+[0m10:39:54.814913 [debug] [MainThread]: Executing "git --help"
+[0m10:39:54.834380 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:39:54.835172 [debug] [MainThread]: STDERR: "b''"
+[0m10:39:54.835512 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:39:54.835787 [info ] [MainThread]: Connection:
+[0m10:39:54.836100 [info ] [MainThread]:   host: localhost
+[0m10:39:54.836320 [info ] [MainThread]:   port: 10000
+[0m10:39:54.836529 [info ] [MainThread]:   cluster: None
+[0m10:39:54.836730 [info ] [MainThread]:   endpoint: None
+[0m10:39:54.836929 [info ] [MainThread]:   schema: default
+[0m10:39:54.837130 [info ] [MainThread]:   organization: 0
+[0m10:39:54.837533 [info ] [MainThread]: Registered adapter: spark=1.7.1
+[0m10:39:54.848816 [debug] [MainThread]: Acquiring new spark connection 'debug'
+[0m10:39:54.849933 [debug] [MainThread]: Using spark connection "debug"
+[0m10:39:54.850200 [debug] [MainThread]: On debug: select 1 as id
+[0m10:39:54.850443 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:39:55.631328 [debug] [MainThread]: Spark adapter: Poll status: 2, query complete
+[0m10:39:55.633328 [debug] [MainThread]: SQL status: OK in 1.0 seconds
+[0m10:39:55.639267 [debug] [MainThread]: On debug: Close
+[0m10:39:55.660773 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m10:39:55.662088 [info ] [MainThread]: [32mAll checks passed![0m
+[0m10:39:55.667146 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 1.5135404, "process_user_time": 1.76082, "process_kernel_time": 0.230191, "process_mem_max_rss": "105320448", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m10:39:55.668011 [debug] [MainThread]: Command `dbt debug` succeeded at 10:39:55.667706 after 1.52 seconds
+[0m10:39:55.668403 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:39:55.668759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fdbea90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112ba6730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112b97e80>]}
+[0m10:39:55.669213 [debug] [MainThread]: Flushing usage events
+[0m10:40:03.865434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f447f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112233af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112269490>]}
+
+
+============================== 10:40:03.869314 | 9de6c233-1631-4f75-8306-9bbbe074bfe3 ==============================
+[0m10:40:03.869314 [info ] [MainThread]: Running with dbt=1.7.3
+[0m10:40:03.869780 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/soumilshah/IdeaProjects/mdbt/Youtube/helloworld/logs', 'debug': 'False', 'profiles_dir': '/Users/soumilshah/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m10:40:04.023139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9de6c233-1631-4f75-8306-9bbbe074bfe3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112233af0>]}
+[0m10:40:04.088961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9de6c233-1631-4f75-8306-9bbbe074bfe3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1124c2430>]}
+[0m10:40:04.089430 [info ] [MainThread]: Registered adapter: spark=1.7.1
+[0m10:40:04.108955 [debug] [MainThread]: checksum: c95636796e12235e48c0560a0bb6a50e98827ef72e7ea1fe07a97c38c91661e1, vars: {}, profile: , target: , version: 1.7.3
+[0m10:40:04.109752 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:40:04.110089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9de6c233-1631-4f75-8306-9bbbe074bfe3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1126a7430>]}
+[0m10:40:04.956571 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.dim_date
+- models.core
+[0m10:40:04.961101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9de6c233-1631-4f75-8306-9bbbe074bfe3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11292f0d0>]}
+[0m10:40:04.970639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9de6c233-1631-4f75-8306-9bbbe074bfe3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112992b20>]}
+[0m10:40:04.971022 [info ] [MainThread]: Found 1 model, 0 sources, 0 exposures, 0 metrics, 439 macros, 0 groups, 0 semantic models
+[0m10:40:04.971291 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9de6c233-1631-4f75-8306-9bbbe074bfe3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112992970>]}
+[0m10:40:04.972438 [info ] [MainThread]: 
+[0m10:40:04.973003 [debug] [MainThread]: Acquiring new spark connection 'master'
+[0m10:40:04.973755 [debug] [ThreadPool]: Acquiring new spark connection 'list_schemas'
+[0m10:40:04.981263 [debug] [ThreadPool]: Using spark connection "list_schemas"
+[0m10:40:04.981513 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "helloworld", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    show databases
+  
+[0m10:40:04.981728 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:40:05.072499 [debug] [ThreadPool]: Spark adapter: Poll status: 2, query complete
+[0m10:40:05.072937 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m10:40:05.075476 [debug] [ThreadPool]: On list_schemas: Close
+[0m10:40:05.081193 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_schemas, now list_None_default)
+[0m10:40:05.086036 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+[0m10:40:05.086325 [debug] [ThreadPool]: Using spark connection "list_None_default"
+[0m10:40:05.086561 [debug] [ThreadPool]: On list_None_default: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "helloworld", "target_name": "dev", "connection_name": "list_None_default"} */
+show table extended in default like '*'
+  
+[0m10:40:05.086785 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:40:05.143505 [debug] [ThreadPool]: Spark adapter: Poll status: 2, query complete
+[0m10:40:05.143943 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m10:40:05.146497 [debug] [ThreadPool]: On list_None_default: ROLLBACK
+[0m10:40:05.146799 [debug] [ThreadPool]: Spark adapter: NotImplemented: rollback
+[0m10:40:05.147046 [debug] [ThreadPool]: On list_None_default: Close
+[0m10:40:05.152160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9de6c233-1631-4f75-8306-9bbbe074bfe3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1129d4dc0>]}
+[0m10:40:05.152656 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m10:40:05.152900 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m10:40:05.153430 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:40:05.153687 [info ] [MainThread]: 
+[0m10:40:05.156713 [debug] [Thread-1  ]: Began running node model.helloworld.dim_date
+[0m10:40:05.157097 [info ] [Thread-1  ]: 1 of 1 START sql incremental model default.dim_date ............................ [RUN]
+[0m10:40:05.157613 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_None_default, now model.helloworld.dim_date)
+[0m10:40:05.158061 [debug] [Thread-1  ]: Began compiling node model.helloworld.dim_date
+[0m10:40:05.167901 [debug] [Thread-1  ]: Writing injected SQL for node "model.helloworld.dim_date"
+[0m10:40:05.168852 [debug] [Thread-1  ]: Timing info for model.helloworld.dim_date (compile): 10:40:05.158331 => 10:40:05.168635
+[0m10:40:05.169140 [debug] [Thread-1  ]: Began executing node model.helloworld.dim_date
+[0m10:40:05.236747 [debug] [Thread-1  ]: Writing runtime sql for node "model.helloworld.dim_date"
+[0m10:40:05.237670 [debug] [Thread-1  ]: Spark adapter: NotImplemented: add_begin_query
+[0m10:40:05.237969 [debug] [Thread-1  ]: Using spark connection "model.helloworld.dim_date"
+[0m10:40:05.238270 [debug] [Thread-1  ]: On model.helloworld.dim_date: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "helloworld", "target_name": "dev", "node_id": "model.helloworld.dim_date"} */
+
+  
+    
+        create table default.dim_date
+      
+      
+    using parquet
+      
+      
+      
+      
+      
+      
+
+      as
+      
+
+SELECT
+    date(d) AS id,
+    d AS full_date,
+    EXTRACT (YEAR FROM d)  AS YEAR,
+    EXTRACT (WEEK FROM d)  AS year_week,
+    EXTRACT (DAY FROM d)   AS year_day,
+    EXTRACT (YEAR FROM  d)  AS fiscal_year,
+    EXTRACT (QUARTER FROM d) AS fiscal_qtr,
+    EXTRACT (MONTH FROM d) AS MONTH,
+    date_format(d, 'MMMM')  AS month_name,
+    EXTRACT (DOW FROM d)  AS week_day,
+    date_format(d, 'EEEE')  AS day_name,
+    (CASE WHEN date_format(d, 'EEEE') NOT IN ('Sunday', 'Saturday') THEN 0 ELSE 1 END) AS day_is_weekday
+FROM (SELECT EXPLODE(months) AS d FROM (SELECT SEQUENCE (TO_DATE('2000-01-01'), TO_DATE('2023-01-01'), INTERVAL 1 DAY) AS months))
+  
+[0m10:40:05.238570 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m10:40:06.605852 [debug] [Thread-1  ]: Spark adapter: Poll status: 2, query complete
+[0m10:40:06.606902 [debug] [Thread-1  ]: SQL status: OK in 1.0 seconds
+[0m10:40:06.626899 [debug] [Thread-1  ]: Timing info for model.helloworld.dim_date (execute): 10:40:05.169299 => 10:40:06.626696
+[0m10:40:06.627262 [debug] [Thread-1  ]: On model.helloworld.dim_date: ROLLBACK
+[0m10:40:06.627553 [debug] [Thread-1  ]: Spark adapter: NotImplemented: rollback
+[0m10:40:06.627808 [debug] [Thread-1  ]: On model.helloworld.dim_date: Close
+[0m10:40:06.634761 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9de6c233-1631-4f75-8306-9bbbe074bfe3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a40ee0>]}
+[0m10:40:06.635978 [info ] [Thread-1  ]: 1 of 1 OK created sql incremental model default.dim_date ....................... [[32mOK[0m in 1.48s]
+[0m10:40:06.636497 [debug] [Thread-1  ]: Finished running node model.helloworld.dim_date
+[0m10:40:06.637727 [debug] [MainThread]: On master: ROLLBACK
+[0m10:40:06.638037 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:40:06.661192 [debug] [MainThread]: Spark adapter: NotImplemented: rollback
+[0m10:40:06.661618 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m10:40:06.661853 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m10:40:06.662086 [debug] [MainThread]: On master: ROLLBACK
+[0m10:40:06.662301 [debug] [MainThread]: Spark adapter: NotImplemented: rollback
+[0m10:40:06.662503 [debug] [MainThread]: On master: Close
+[0m10:40:06.666535 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:40:06.666828 [debug] [MainThread]: Connection 'model.helloworld.dim_date' was properly closed.
+[0m10:40:06.667184 [info ] [MainThread]: 
+[0m10:40:06.667451 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 1.69 seconds (1.69s).
+[0m10:40:06.667964 [debug] [MainThread]: Command end result
+[0m10:40:06.674654 [info ] [MainThread]: 
+[0m10:40:06.674982 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:40:06.675219 [info ] [MainThread]: 
+[0m10:40:06.675462 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m10:40:06.677543 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.8769667, "process_user_time": 2.727446, "process_kernel_time": 0.238867, "process_mem_max_rss": "118349824", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m10:40:06.677943 [debug] [MainThread]: Command `dbt run` succeeded at 10:40:06.677851 after 2.88 seconds
+[0m10:40:06.678233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f447f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a40ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1126a23d0>]}
+[0m10:40:06.678509 [debug] [MainThread]: Flushing usage events
