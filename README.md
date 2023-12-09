@@ -1,1 +1,1 @@
-# dat-spark-hello-world
+# dbt-spark-hello-world
